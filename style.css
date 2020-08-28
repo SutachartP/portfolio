@@ -137,7 +137,22 @@ header,
   opacity: 0;
 }
 
-h1.heading-home:hover img.hidden-img {
+.hidden-text {
+  position: fixed;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  bottom: 35%;
+  right: 15%;
+  z-index: 0;
+  opacity: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h1.heading-home:hover img.hidden-img,
+h1.heading-home:hover p.hidden-text {
   opacity: 1;
 }
 
