@@ -27,7 +27,8 @@ header,
   background: #ffffff;
 }
 
-#skill {
+#skill,
+#myport {
   min-height: 40vh;
   position: relative;
   background: #333333;
@@ -38,6 +39,15 @@ header,
   font-family: "Saira Condensed", sans-serif;
   font-size: 20px;
   color: #333333;
+}
+
+.down-link {
+  bottom: 0%;
+  position: absolute;
+}
+
+.padding-top {
+  padding: 60px 10px;
 }
 
 .nav-link {
@@ -65,6 +75,14 @@ header,
     font-size: 3em;
     font-weight: 900;
   }
+
+  .header-text {
+    margin-top: 5vh;
+  }
+
+  .padding-top {
+    padding: 20px 10px;
+  }
 }
 
 .span-link {
@@ -80,9 +98,18 @@ header,
   background: #333333;
   color: #ffffff;
   transition: 1s;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
-
+.a-link {
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  color: #706c61;
+  font-size: 14px;
+}
+.a-link:hover {
+  text-decoration: none;
+  color: #706c61;
+}
 .text-content {
   font-family: "Roboto Mono", monospace;
   color: rgba(41, 41, 41, 0.75);
@@ -150,15 +177,20 @@ header,
   font-size: 16px;
   font-weight: 500;
 }
-
+/* 
 h1.heading-home:hover img.hidden-img,
 h1.heading-home:hover p.hidden-text {
   opacity: 1;
-}
+} */
 
 .border-navbar {
-  transition: width 2s;
-  border-bottom: #333333 solid 2.5px;
+  left: 0%;
+  bottom: 0%;
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background: black;
+  transition: width 0.5s ease;
 }
 
 .header-text {
