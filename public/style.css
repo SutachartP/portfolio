@@ -1,0 +1,228 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+header,
+#home,
+#about,
+#project,
+#contact {
+  min-height: 100vh;
+  position: relative;
+}
+
+#home,
+#about,
+#project {
+  background: #ffffff;
+}
+
+#contact {
+  background: #ffffff;
+}
+
+#skill {
+  min-height: 40vh;
+  position: relative;
+  background: #333333;
+}
+
+.nav-link,
+.navbar-brand {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 20px;
+  color: #333333;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.site-blocks-cover {
+  min-height: 100vh;
+}
+
+#navbar {
+  padding: 15px 10px;
+  background: #ffffff;
+}
+
+.heading-home {
+  cursor: pointer;
+  font-size: 4em;
+  font-weight: 900;
+  color: #333333;
+}
+
+@media (max-width: 991px) {
+  .heading-home {
+    font-size: 3em;
+    font-weight: 900;
+  }
+}
+
+.span-link {
+  padding: 2px 6px 2px;
+  color: #333333;
+}
+
+.span-link:hover {
+  color: rgb(37, 37, 37);
+}
+
+.active span.span-link {
+  background: #333333;
+  color: #ffffff;
+  transition: 1s;
+  border-radius: 3px;
+}
+
+.text-content {
+  font-family: "Roboto Mono", monospace;
+  color: rgba(41, 41, 41, 0.75);
+  font-weight: bold;
+  font-size: 16px;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hidden-img {
+  position: fixed;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0;
+}
+
+h1.heading-home:hover img.hidden-img {
+  opacity: 1;
+}
+
+.border-navbar {
+  transition: width 2s;
+  border-bottom: #333333 solid 2.5px;
+}
+
+.header-text {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.skill-box {
+  display: inline-block;
+  margin: 20px;
+}
+.frame {
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+.frame img {
+  width: 70%;
+}
+.frame img:hover {
+  transition: 0.5s ease-out;
+  width: 90%;
+}
+
+.card,
+.card-body {
+  border: 0px !important;
+  font-family: "Rubik", sans-serif;
+}
+p.card-head-text {
+  color: #333333;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.card .card-body p a {
+  text-transform: uppercase;
+  margin: 0.1em 0.2em 0.45em;
+  padding: 0.4em 0.6em;
+  font-weight: 600;
+  border: 2px solid #3333;
+  -webkit-box-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #3333, 3px 3px 0 #333;
+  box-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #3333, 3px 3px 0 #333;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
+  background: #333333;
+  color: #ffffff;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+.card .card-body p a:hover {
+  border-bottom: 2px solid #333333;
+  background: #fff;
+  color: #333333;
+  text-shadow: 1px 1px 0 transparent;
+}
+.card:hover p.card-head-text {
+  transition: 0.3s;
+  font-size: 24px;
+}
+.card:hover .card-body p a {
+  transition: 0.3s;
+  font-size: 1em;
+}
+
+p {
+  margin-bottom: 10px !important;
+}
+
+/* .img-hover-zoom {
+  overflow: hidden; 
+}
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+} */
