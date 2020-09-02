@@ -13,7 +13,8 @@ export default class App extends Component {
         >
           <div class="container">
             <a href="/" class="navbar-brand d-flex w-50 mr-auto text-uppercase">
-              <b>P. Sutachart</b>
+              {/* P. Sutachart */}
+              <img src="img/icon/SP-model.png" style={{ width: 50 }} />
             </a>
             <button
               class="navbar-toggler"
@@ -24,7 +25,7 @@ export default class App extends Component {
             </button>
             <nav class="navbar-collapse collapse w-100" id="menu">
               <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item mr-3">
+                <li class="nav-item">
                   <a
                     class="nav-link text-uppercase active cool-link"
                     href="#home"
@@ -32,17 +33,17 @@ export default class App extends Component {
                     <span class="span-link">Home</span>
                   </a>
                 </li>
-                <li class="nav-item mr-3">
-                  <a class=" nav-link text-uppercase  cool-link" href="#about">
+                <li class="nav-item">
+                  <a class=" nav-link text-uppercase" href="#about">
                     <span class="span-link">About</span>
                   </a>
                 </li>
-                <li class="nav-item mr-3">
+                <li class="nav-item">
                   <a class="nav-link text-uppercase" href="#project">
                     <span class="span-link">Work</span>
                   </a>
                 </li>
-                <li class="nav-item mr-3">
+                <li class="nav-item">
                   <a class="nav-link text-uppercase" href="#contact">
                     <span class="span-link">Contact</span>
                   </a>
@@ -79,6 +80,7 @@ export default class App extends Component {
               </ul>
             </nav>
           </div>
+          <div id="border-active" class="border-navbar"></div>
         </div>
         <div class="container">
           <div class="row align-items-center text-center justify-content-center site-blocks-cover">
@@ -86,17 +88,46 @@ export default class App extends Component {
               <h1 class="text-uppercase heading-home" id="active-img">
                 Hi, i am Sutachart
                 <img class="hidden-img" src="/img/png/suit.png" width="400" />
+                <p class="hidden-text">Hi! everyone</p>
               </h1>
-              <span style={{ fontWeight: 600, color: "#706c61" }}>
-                Programmer & Developer
-              </span>
-              <div class="mt-5">
-                <span style={{ color: "#706c61" }}>
-                  web design & SEO agency in Brussels! We love creating
-                  beautiful interfaces for web and mobile devices, to make your
-                  business shine online.
-                </span>
+              <span class="heading-low">Programmer & Web Developer</span>
+              <div>
+                <p class="home-sub-text">
+                  Welcome to my portfolio, I like to learn new things and
+                  improve yourself always.
+                </p>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/sutachart-pookmuenwai-4aa76219b/"
+                    target="_blank"
+                    class="a-link"
+                  >
+                    Linkedin
+                  </a>
+                  <span class="a-link"> | </span>
+                  <a
+                    href="https://github.com/sutachart"
+                    target="_blank"
+                    class="a-link"
+                  >
+                    GitHub
+                  </a>
+                  <span class="a-link"> | </span>
+                  <a
+                    href="https://github.com/sutachart"
+                    target="_blank"
+                    class="a-link"
+                  >
+                    Facebook
+                  </a>
+                </p>
               </div>
+            </div>
+            <div class="down-link">
+              {/* <p>- About Me -</p> */}
+              <a href="#about">
+                <img src="img/icon/arrow-down.png" width="60" />
+              </a>
             </div>
           </div>
         </div>

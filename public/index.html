@@ -3,35 +3,37 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="img/icon/home_icon.png" />
+  <link rel="icon" href="img/icon/port.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="test.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
   <title>Portfolio</title>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <div id="home"></div>
-  <div id="skill"></div>
+  <div id="myport"></div>
   <div id="about"></div>
+  <div id="skill"></div>
   <div id="project"></div>
   <div id="contact"></div>
 
-  <!-- <script>
+  <script>
     window.onscroll = function () { scrollFunction() };
     function scrollFunction() {
-      if (document.body.scrollTop > 730 || document.documentElement.scrollTop > 730) {
-        $("#navbar").last().addClass("border-navbar");
+      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        document.getElementById("border-active").style.width = "100%";
+
       } else {
-        $("#navbar").last().removeClass("border-navbar");
+        document.getElementById("border-active").style.width = "0%";
       }
     }
-  </script> -->
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

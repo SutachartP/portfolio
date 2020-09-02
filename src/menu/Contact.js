@@ -4,7 +4,7 @@ export default class Contact extends Component {
   render() {
     return (
       <div class="contact">
-        <div style={{ padding: "60px 10px" }}></div>
+        <div class="padding-top"></div>
 
         <div class="container">
           <div class="row justify-content-center">
@@ -14,11 +14,11 @@ export default class Contact extends Component {
               </h3>
             </div>
           </div>
-          <div class="row rounded mt-4">
-            <div class="col-12 col-md-6 mt-2 mb-2">
-              <form action="#" class="p-5 bg-white rounded">
+          <div class="row rounded mt-4 justify-content-center">
+            <div class="col-12 col-md-10">
+              <form action="#" class="p-5 bg-white rounded box-shadow">
                 <div class="row form-group">
-                  <div class="col-md-12 mb-3 mb-md-0">
+                  <div class="col-md-12">
                     <label class="font-weight-bold" for="fullname">
                       Your Name
                     </label>
@@ -62,23 +62,17 @@ export default class Contact extends Component {
                   <div class="col-md-12">
                     <input
                       type="submit"
-                      value="CONFIRM"
-                      class="btn btn-dark rounded btn-lg"
+                      value="SEND"
+                      class="btn btn-dark rounded btn-lg w-100"
                     />
                   </div>
                 </div>
               </form>
             </div>
-            <div class="col-12 col-md-6 mt-2 mb-2">
-              <div class="p-5 bg-white rounded">
-                <div class="p-3">086-875-0608</div>
-                <div class="p-3">sutachart_me@kkumail.com</div>
-                <div class="p-3">FB,IN,Git</div>
-              </div>
-            </div>
           </div>
         </div>
-        <footer class="footer py-3" style={{ background: "#333333" }}>
+
+        <footer class="footer mt-4 py-3" style={{ background: "#333333" }}>
           <div class="container">
             <div class="text-center">
               <span class="text-light">

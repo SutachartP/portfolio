@@ -1,7 +1,13 @@
-html,
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
   position: relative;
   scroll-behavior: smooth;
 }
@@ -17,31 +23,49 @@ header,
   position: relative;
 }
 
-#home,
-#about,
+#home {
+  background: #ffffff;
+}
+
+#about {
+  background: #ffffff;
+}
+
 #project {
   background: #ffffff;
 }
 
 #contact {
-  background: #ffffff;
+  background: #e9ecef;
 }
 
 #skill {
   min-height: 40vh;
   position: relative;
-  background: #333333;
+  background: #343a40;
+}
+
+#myport {
+  min-height: 40vh;
+  position: relative;
+  background: #343a40;
 }
 
 .nav-link,
 .navbar-brand {
-  font-family: "Saira Condensed", sans-serif;
-  font-size: 20px;
-  color: #333333;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #212529;
+  font-weight: 600;
 }
 
-.nav-link {
-  font-weight: 600;
+.down-link {
+  bottom: 0%;
+  position: absolute;
+}
+
+.padding-top {
+  padding: 60px 10px;
 }
 
 .site-blocks-cover {
@@ -54,75 +78,56 @@ header,
 }
 
 .heading-home {
-  cursor: pointer;
+  font-family: "Poppins", sans-serif;
   font-size: 4em;
   font-weight: 900;
-  color: #333333;
+  color: #343a40;
+  cursor: pointer;
 }
 
-@media (max-width: 991px) {
-  .heading-home {
-    font-size: 3em;
-    font-weight: 900;
-  }
+.heading-low {
+  font-weight: 700;
+  color: #495057;
+  font-size: 20px;
+}
+
+.home-sub-text {
+  margin-top: 50px;
+  color: #6c757d;
+}
+
+.heading-sub {
+  font-family: "Poppins", sans-serif;
+  color: #343a40;
 }
 
 .span-link {
   padding: 2px 6px 2px;
-  color: #333333;
+  color: #212529;
 }
-
 .span-link:hover {
-  color: rgb(37, 37, 37);
+  color: #5a5a5a;
+  transition: width 0.3s;
 }
-
 .active span.span-link {
-  background: #333333;
+  background: #212529;
   color: #ffffff;
   transition: 1s;
-  border-radius: 3px;
 }
 
+.a-link {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0px 2px;
+}
+.a-link:hover {
+  text-decoration: none;
+  color: #6c757d;
+}
 .text-content {
-  font-family: "Roboto Mono", monospace;
-  color: rgba(41, 41, 41, 0.75);
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #495057;
   font-size: 16px;
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadein {
-  /* Firefox */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadein {
-  /* Opera */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .hidden-img {
@@ -137,19 +142,41 @@ header,
   opacity: 0;
 }
 
-h1.heading-home:hover img.hidden-img {
-  opacity: 1;
+.hidden-text {
+  position: fixed;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  bottom: 35%;
+  right: 15%;
+  z-index: 0;
+  opacity: 0;
+  font-size: 16px;
+  font-weight: 500;
 }
+/* 
+h1.heading-home:hover img.hidden-img,
+h1.heading-home:hover p.hidden-text {
+  opacity: 1;
+} */
 
 .border-navbar {
-  transition: width 2s;
-  border-bottom: #333333 solid 2.5px;
+  left: 0%;
+  bottom: 0%;
+  position: absolute;
+  height: 2.5px;
+  width: 0%;
+  background: black;
+  transition: width 0.5s ease;
 }
 
 .header-text {
-  font-family: "Saira Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2em;
   letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .skill-box {
@@ -167,17 +194,17 @@ h1.heading-home:hover img.hidden-img {
   width: 70%;
 }
 .frame img:hover {
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-in-out;
   width: 90%;
 }
 
 .card,
 .card-body {
+  font-family: "Poppins", sans-serif;
   border: 0px !important;
-  font-family: "Rubik", sans-serif;
 }
 p.card-head-text {
-  color: #333333;
+  color: #343a40;
   font-size: 20px;
   font-weight: 600;
   transition: 0.3s;
@@ -193,15 +220,15 @@ p.card-head-text {
   display: inline-block;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.5s ease-out;
-  background: #333333;
+  background: #212529;
   color: #ffffff;
   font-size: 0.8em;
   text-decoration: none;
 }
 .card .card-body p a:hover {
-  border-bottom: 2px solid #333333;
+  border-bottom: 2px solid #212529;
   background: #fff;
-  color: #333333;
+  color: #212529;
   text-shadow: 1px 1px 0 transparent;
 }
 .card:hover p.card-head-text {
@@ -213,16 +240,40 @@ p.card-head-text {
   font-size: 1em;
 }
 
-p {
-  margin-bottom: 10px !important;
+.box-shadow {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* .img-hover-zoom {
-  overflow: hidden; 
+.img-project {
+  border-bottom: 0.5px solid #3333;
 }
-.img-hover-zoom img {
-  transition: transform 0.5s ease;
+.img-project img {
+  height: 225px;
+  width: 100%;
 }
-.img-hover-zoom:hover img {
-  transform: scale(1.5);
-} */
+
+@media (max-width: 991px) {
+  .heading-home {
+    font-size: 2.5em;
+    font-weight: 900;
+  }
+  .heading-low {
+    font-size: 16px;
+  }
+
+  .header-text,
+  .heading-sub {
+    margin-top: 5vh;
+  }
+
+  .padding-top {
+    padding: 20px 10px;
+  }
+  .padding-bot {
+    padding: 20px 10px;
+  }
+
+  #navbar {
+    padding: 8px 10px;
+  }
+}
