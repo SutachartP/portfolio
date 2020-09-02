@@ -36,7 +36,7 @@ header,
 }
 
 #contact {
-  background: #ffffff;
+  background: #e9ecef;
 }
 
 #skill {
@@ -48,7 +48,7 @@ header,
 #myport {
   min-height: 40vh;
   position: relative;
-  background: #e9ecef;
+  background: #343a40;
 }
 
 .nav-link,
@@ -107,6 +107,7 @@ header,
 }
 .span-link:hover {
   color: #5a5a5a;
+  transition: width 0.3s;
 }
 .active span.span-link {
   background: #212529;
@@ -175,6 +176,7 @@ h1.heading-home:hover p.hidden-text {
   font-size: 2em;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-bottom: 15px;
 }
 
 .skill-box {
@@ -238,6 +240,18 @@ p.card-head-text {
   font-size: 1em;
 }
 
+.box-shadow {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.img-project {
+  border-bottom: 0.5px solid #3333;
+}
+.img-project img {
+  height: 225px;
+  width: 100%;
+}
+
 @media (max-width: 991px) {
   .heading-home {
     font-size: 2.5em;
@@ -254,5 +268,12 @@ p.card-head-text {
 
   .padding-top {
     padding: 20px 10px;
+  }
+  .padding-bot {
+    padding: 20px 10px;
+  }
+
+  #navbar {
+    padding: 8px 10px;
   }
 }
