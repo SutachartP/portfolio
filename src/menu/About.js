@@ -58,7 +58,7 @@ export default class About extends Component {
           </div>
           <div class="col-sm-6 col-12">
             <div class="img-about justify-content-center">
-              <img src="/img/png/about/mockup.png" class="align-items-center" />
+              <img src="/img/png/about/web-mockup.png" />
             </div>
           </div>
         </div>

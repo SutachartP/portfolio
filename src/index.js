@@ -7,12 +7,19 @@ import Contact from "./menu/Contact";
 import Project from "./menu/Project";
 import About from "./menu/About";
 import Myskill from "./menu/Myskill";
+import Myport from "./menu/Myport";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById("home")
+);
+ReactDOM.render(
+  <React.StrictMode>
+    <Myport />
+  </React.StrictMode>,
+  document.getElementById("myport")
 );
 ReactDOM.render(
   <React.StrictMode>
