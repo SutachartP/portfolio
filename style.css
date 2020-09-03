@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -23,37 +22,37 @@ header,
   position: relative;
 }
 
-#home {
-  background: #ffffff;
-}
-
-#about {
-  background: #ffffff;
-}
-
+#home,
+#about,
 #project {
   background: #ffffff;
 }
 
 #contact {
-  background: #e9ecef;
+  background: rgb(233, 236, 239);
+  background: linear-gradient(
+    360deg,
+    rgba(233, 236, 239, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(233, 236, 239, 1) 100%
+  );
 }
 
+#myport,
 #skill {
   min-height: 40vh;
   position: relative;
-  background: #343a40;
-}
-
-#myport {
-  min-height: 40vh;
-  position: relative;
-  background: #e9ecef;
+  background: rgb(233, 236, 239);
+  background: linear-gradient(
+    360deg,
+    rgba(233, 236, 239, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(233, 236, 239, 1) 100%
+  );
 }
 
 .nav-link,
 .navbar-brand {
-  font-family: "Poppins", sans-serif;
   font-size: 18px;
   color: #212529;
   font-weight: 600;
@@ -62,6 +61,13 @@ header,
 .down-link {
   bottom: 0%;
   position: absolute;
+}
+
+.padding-page {
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 50px;
 }
 
 .padding-top {
@@ -78,7 +84,6 @@ header,
 }
 
 .heading-home {
-  font-family: "Poppins", sans-serif;
   font-size: 4em;
   font-weight: 900;
   color: #343a40;
@@ -97,8 +102,9 @@ header,
 }
 
 .heading-sub {
-  font-family: "Poppins", sans-serif;
   color: #343a40;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .span-link {
@@ -125,7 +131,6 @@ header,
   color: #6c757d;
 }
 .text-content {
-  font-family: "Poppins", sans-serif;
   color: #495057;
   font-size: 16px;
 }
@@ -172,7 +177,6 @@ h1.heading-home:hover p.hidden-text {
 }
 
 .header-text {
-  font-family: "Poppins", sans-serif;
   font-size: 2em;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -200,7 +204,6 @@ h1.heading-home:hover p.hidden-text {
 
 .card,
 .card-body {
-  font-family: "Poppins", sans-serif;
   border: 0px !important;
   margin-bottom: 20px;
 }
@@ -284,5 +287,11 @@ p.card-head-text {
     margin-left: 20px;
     height: 250px;
     width: 312px;
+  }
+  .padding-page {
+    padding-top: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 50px;
   }
 }
