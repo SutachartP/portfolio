@@ -64,7 +64,7 @@ header,
 }
 
 .padding-page {
-  padding-top: 100px;
+  padding-top: 90px;
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 50px;
@@ -293,5 +293,8 @@ p.card-head-text {
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 50px;
+  }
+  .padding-page div div div div div img {
+    margin-top: 25px;
   }
 }
