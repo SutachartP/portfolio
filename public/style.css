@@ -48,7 +48,7 @@ header,
 #myport {
   min-height: 40vh;
   position: relative;
-  background: #343a40;
+  background: #e9ecef;
 }
 
 .nav-link,
@@ -131,7 +131,7 @@ header,
 }
 
 .hidden-img {
-  position: fixed;
+  position: absolute;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.5s ease-in-out;
@@ -155,8 +155,8 @@ header,
   font-size: 16px;
   font-weight: 500;
 }
-/* 
-h1.heading-home:hover img.hidden-img,
+
+/* h1.heading-home:hover img.hidden-img,
 h1.heading-home:hover p.hidden-text {
   opacity: 1;
 } */
@@ -202,6 +202,7 @@ h1.heading-home:hover p.hidden-text {
 .card-body {
   font-family: "Poppins", sans-serif;
   border: 0px !important;
+  margin-bottom: 20px;
 }
 p.card-head-text {
   color: #343a40;
@@ -239,7 +240,6 @@ p.card-head-text {
   transition: 0.3s;
   font-size: 1em;
 }
-
 .box-shadow {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -252,6 +252,12 @@ p.card-head-text {
   width: 100%;
 }
 
+.img-about img {
+  margin-top: 100px;
+  margin-left: 50px;
+  height: 400px;
+}
+
 @media (max-width: 991px) {
   .heading-home {
     font-size: 2.5em;
@@ -260,20 +266,23 @@ p.card-head-text {
   .heading-low {
     font-size: 16px;
   }
-
   .header-text,
   .heading-sub {
     margin-top: 5vh;
   }
-
   .padding-top {
     padding: 20px 10px;
   }
   .padding-bot {
     padding: 20px 10px;
   }
-
   #navbar {
     padding: 8px 10px;
+  }
+  .img-about img {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 250px;
+    width: 312px;
   }
 }

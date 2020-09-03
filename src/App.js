@@ -14,7 +14,10 @@ export default class App extends Component {
           <div class="container">
             <a href="/" class="navbar-brand d-flex w-50 mr-auto text-uppercase">
               {/* P. Sutachart */}
-              <img src="img/icon/SP-model.png" style={{ width: 50 }} />
+              <img
+                src="img/icon/SP-model.png"
+                style={{ width: 50, height: 50 }}
+              />
             </a>
             <button
               class="navbar-toggler"
@@ -88,7 +91,7 @@ export default class App extends Component {
               <h1 class="text-uppercase heading-home" id="active-img">
                 Hi, i am Sutachart
                 <img class="hidden-img" src="/img/png/suit.png" width="400" />
-                <p class="hidden-text">Hi! everyone</p>
+                {/* <p class="hidden-text">Hi! everyone</p> */}
               </h1>
               <span class="heading-low">Programmer & Web Developer</span>
               <div>

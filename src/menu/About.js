@@ -6,8 +6,8 @@ export default class About extends Component {
     return (
       <div class="container">
         <div class="padding-top"></div>
-        <div class="row-11">
-          <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-6 col-12">
             <div class="heading-sub text-uppercase">
               <b>About Me</b>
             </div>
@@ -23,7 +23,7 @@ export default class About extends Component {
             <div class="heading-sub text-uppercase">
               <b>Technical Skills</b>
             </div>
-            <div class="row mt-4 text-content">
+            <div class="row mt-4 text-content pl-3">
               <div class="col-5 col-sm-5">
                 <ul>
                   <li>C,C++</li>
@@ -47,7 +47,7 @@ export default class About extends Component {
             <div class="heading-sub text-uppercase">
               <b>Language</b>
             </div>
-            <div class="mt-4 text-content">
+            <div class="mt-4 text-content pl-3">
               <div>
                 <ul>
                   <li>THAI : Excellent</li>
@@ -56,24 +56,10 @@ export default class About extends Component {
               </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            {/* <div class="row-md-6 row-6 h-75">
-              <img
-                class="border"
-                style={{ zIndex: 1, position: "relative" }}
-                src="/img/png/research.jpg"
-                width="300"
-              />
-              <img
-                class="border"
-                style={{
-                  zIndex: 2,
-                  position: "absolute",
-                }}
-                src="/img/png/research.jpg"
-                width="300"
-              />
-            </div> */}
+          <div class="col-sm-6 col-12">
+            <div class="img-about justify-content-center">
+              <img src="/img/png/about/mockup.png" class="align-items-center" />
+            </div>
           </div>
         </div>
         <div class="padding-bot"></div>
