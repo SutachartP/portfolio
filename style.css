@@ -29,6 +29,7 @@ header,
 }
 
 #contact {
+  border: 0.5px solid #dee2e6;
   background: rgb(233, 236, 239);
   background: linear-gradient(
     360deg,
@@ -42,6 +43,7 @@ header,
 #skill {
   min-height: 40vh;
   position: relative;
+  border: 0.5px solid #dee2e6;
   background: rgb(233, 236, 239);
   background: linear-gradient(
     360deg,
@@ -136,7 +138,7 @@ header,
 }
 
 .hidden-img {
-  position: absolute;
+  position: fixed;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.5s ease-in-out;
@@ -161,10 +163,10 @@ header,
   font-weight: 500;
 }
 
-/* h1.heading-home:hover img.hidden-img,
+h1.heading-home:hover img.hidden-img,
 h1.heading-home:hover p.hidden-text {
   opacity: 1;
-} */
+}
 
 .border-navbar {
   left: 0%;
@@ -254,11 +256,33 @@ p.card-head-text {
   height: 225px;
   width: 100%;
 }
-
 .img-about img {
   margin-top: 100px;
   margin-left: 50px;
   height: 400px;
+}
+
+.btn-work {
+  text-transform: uppercase;
+  color: #343a40;
+  font-weight: 600;
+  font-size: 16px;
+  margin: auto;
+  padding: 0.6em 0.6em;
+  width: 100px;
+  height: 50px;
+  border: 1px solid #495057;
+  border-radius: 2px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.btn-work:hover {
+  color: #ffffff;
+  transition: width 2s ease;
+  background-color: #212529;
+  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -296,5 +320,12 @@ p.card-head-text {
   }
   .padding-page div div div div div img {
     margin-top: 25px;
+  }
+  h1.heading-home:hover img.hidden-img,
+  h1.heading-home:hover p.hidden-text {
+    opacity: 0;
+  }
+  .btn-work {
+    margin-bottom: 50px;
   }
 }
