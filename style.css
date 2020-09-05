@@ -29,7 +29,7 @@ header,
 }
 
 #contact {
-  border: 0.5px solid #dee2e6;
+  border-top: 0.5px solid #dee2e6;
   background: rgb(233, 236, 239);
   background: linear-gradient(
     360deg,
@@ -149,22 +149,7 @@ header,
   opacity: 0;
 }
 
-.hidden-text {
-  position: fixed;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  bottom: 35%;
-  right: 15%;
-  z-index: 0;
-  opacity: 0;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-h1.heading-home:hover img.hidden-img,
-h1.heading-home:hover p.hidden-text {
+h1.heading-home:hover img.hidden-img {
   opacity: 1;
 }
 
@@ -285,6 +270,22 @@ p.card-head-text {
   cursor: pointer;
 }
 
+.btn-gotop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  background: #ffffff;
+  bottom: 30px;
+  right: 30px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  border: 0.5px solid #5a5a5a;
+  box-shadow: 2px 2px 4px rgba(1, 1, 1, 1);
+  opacity: 0;
+}
+
 @media (max-width: 991px) {
   .heading-home {
     font-size: 2.5em;
@@ -327,5 +328,9 @@ p.card-head-text {
   }
   .btn-work {
     margin-bottom: 50px;
+  }
+  .btn-gotop,
+  .btn-gotop img {
+    width: 0;
   }
 }
