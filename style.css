@@ -332,5 +332,7 @@ p.card-head-text {
   .btn-gotop,
   .btn-gotop img {
     width: 0;
+    border: 0;
+    box-shadow: 0;
   }
 }
