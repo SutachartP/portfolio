@@ -15,9 +15,10 @@ export default class About extends Component {
               I'm new graduated from Computer Science at Khonkaen University. I
               already knew some middle level programming languages like c,c++.
               Due to my interest on web-development I learned React JS ,
-              Java-script and some front-end technologies.then I worked as an
-              intern in a startup software company. yes,web web-development is
-              awesome!.
+              Java-script and some front-end technologies. then I worked as an
+              intern in a startup software company. Now i’m not working at the
+              moment and i'm looking for a job as Front-end or Back-end
+              developer.
             </div>
             <hr style={{ margin: "30px 0px", borderTop: "1px solid black" }} />
             <div class="heading-sub text-uppercase">
@@ -35,7 +36,7 @@ export default class About extends Component {
               </div>
               <div class="col-7 col-sm-7">
                 <ul>
-                  <li>Ionic Framework</li>
+                  <li>Ionic Framework (Basic)</li>
                   <li>Java</li>
                   <li>Git,GIt Hub</li>
                   <li>Microsoft Office</li>
@@ -57,8 +58,8 @@ export default class About extends Component {
             </div>
           </div>
           <div class="col-sm-6 col-12">
-            <div class="img-about justify-content-center">
-              <img src="/img/png/about/web-mockup.png" />
+            <div class="img-about">
+              <img src="img/png/about/mockuppage.png" />
             </div>
           </div>
         </div>

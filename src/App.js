@@ -26,6 +26,7 @@ export default class App extends Component {
             >
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <nav class="navbar-collapse collapse w-100" id="menu">
               <ul class="navbar-nav w-100 justify-content-center">
                 <li class="nav-item">
@@ -91,7 +92,6 @@ export default class App extends Component {
               <h1 class="text-uppercase heading-home" id="active-img">
                 Hi, i am Sutachart
                 <img class="hidden-img" src="/img/png/suit.png" width="400" />
-                {/* <p class="hidden-text">Hi! everyone</p> */}
               </h1>
               <span class="heading-low">Programmer & Web Developer</span>
               <div>
@@ -127,7 +127,6 @@ export default class App extends Component {
               </div>
             </div>
             <div class="down-link">
-              {/* <p>- About Me -</p> */}
               <a href="#about">
                 <img src="img/icon/arrow-down.png" width="60" />
               </a>

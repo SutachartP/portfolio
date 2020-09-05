@@ -17,9 +17,8 @@ export default class Myport extends Component {
                     <b>Portfolio</b>
                   </p>
                   <p class="text-content">
-                    i built this static portfolio website with HTML/CSS and
-                    vanilla Java-script. it has personalized theme options which
-                    was built with DOM interface.
+                    I built this static portfolio website with HTML/CSS and
+                    Java-script.
                   </p>
                 </div>
               </div>
@@ -34,8 +33,8 @@ export default class Myport extends Component {
                     <b>To do list</b>
                   </p>
                   <p class="text-content">
-                    i built this web-page for an experimental purpose.here i
-                    used this reactjs and django frameworks.
+                    I built this web-page for show my projects. i used this
+                    react.js and use github pages for hosting.
                   </p>
                 </div>
               </div>
@@ -49,7 +48,10 @@ export default class Myport extends Component {
                   <p class="heading-sub">
                     <b>My Jobs</b>
                   </p>
-                  <p class="text-content">I'm new graduated student.</p>
+                  <p class="text-content">
+                    I'm new graduated student and looking for a job as a
+                    front-end or back-end developer.
+                  </p>
                 </div>
               </div>
             </div>

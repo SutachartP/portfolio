@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
   <title>Portfolio</title>
@@ -22,18 +21,28 @@
   <div id="skill"></div>
   <div id="project"></div>
   <div id="contact"></div>
+  <a id="gotop" class="btn-gotop" href="#home"><img src="img/icon/gotop.png" width="30" /></a>
 
   <script>
     window.onscroll = function () { scrollFunction() };
     function scrollFunction() {
       if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
         document.getElementById("border-active").style.width = "100%";
-
       } else {
         document.getElementById("border-active").style.width = "0%";
       }
+
+      if (document.body.scrollTop > 735 || document.documentElement.scrollTop > 735) {
+        document.getElementById("gotop").style.opacity = "1";
+        document.getElementById("gotop").style.transition = "0.5s";
+
+      } else {
+        document.getElementById("gotop").style.opacity = "0";
+        // $("#navbar div a span").removeClass("font-black");
+      }
     }
   </script>
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -45,6 +54,5 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 </body>
-
 
 </html>

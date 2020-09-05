@@ -56,7 +56,11 @@ export default class Project extends Component {
           </div>
           <div class="col-md-4">
             <div class="card box-shadow">
-              <a href="#" class="img-project">
+              <a
+                href="https://drive.google.com/drive/folders/1dnHWtv3VbR4zgVOWNfbvxpA33B39pHoH?usp=sharing"
+                target="_blank"
+                class="img-project"
+              >
                 <img alt="PIS Website [100%x225]" src="img/png/work/ar.png" />
               </a>
               <div class="card-body text-center">
@@ -69,6 +73,13 @@ export default class Project extends Component {
                   <a href="#work">AR</a>
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <div class="btn-work btn1 w-100">
+              <a>More ...</a>
             </div>
           </div>
         </div>
