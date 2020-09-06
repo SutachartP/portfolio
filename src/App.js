@@ -19,13 +19,13 @@ export default class App extends Component {
                 style={{ width: 50, height: 50 }}
               />
             </a>
-            <button
+            {/* <button
               class="navbar-toggler"
               data-toggle="collapse"
               data-target="#menu"
             >
               <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> */}
 
             <nav class="navbar-collapse collapse w-100" id="menu">
               <ul class="navbar-nav w-100 justify-content-center">

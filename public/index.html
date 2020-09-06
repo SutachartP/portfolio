@@ -12,16 +12,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
   <title>Portfolio</title>
+
 </head>
 
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#project">WORK</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </div>
+
   <div id="home"></div>
+
+  <span class="btn-openNav" onclick="openNav()">&#9776;</span>
+
   <div id="myport"></div>
   <div id="about"></div>
   <div id="skill"></div>
   <div id="project"></div>
   <div id="contact"></div>
-  <a id="gotop" class="btn-gotop" href="#home"><img src="img/icon/gotop.png" width="30" /></a>
+  <div id="gotop"><a href="#home" class="btn-gotop"><img src="img/icon/gotop.png" width="30" /></a></div>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
 
   <script>
     window.onscroll = function () { scrollFunction() };
@@ -31,17 +57,14 @@
       } else {
         document.getElementById("border-active").style.width = "0%";
       }
-
       if (document.body.scrollTop > 735 || document.documentElement.scrollTop > 735) {
-        document.getElementById("gotop").style.opacity = "1";
-        document.getElementById("gotop").style.transition = "0.5s";
-
+        $("#gotop a").last().addClass("btn-active");
       } else {
-        document.getElementById("gotop").style.opacity = "0";
-        // $("#navbar div a span").removeClass("font-black");
+        $("#gotop a").last().removeClass("btn-active");
       }
     }
   </script>
+
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
