@@ -356,9 +356,11 @@ p.card-head-text {
     font-size: 12px;
   }
 }
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .btn-openNav {
     cursor: pointer;
+    font-weight: 900;
+    color: #212529;
     font-size: 36px;
     position: fixed;
     top: 10px;
