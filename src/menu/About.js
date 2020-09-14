@@ -4,14 +4,14 @@ import React, { Component } from "react";
 export default class About extends Component {
   render() {
     return (
-      <div class="container">
-        <div class="padding-top"></div>
-        <div class="row">
-          <div class="col-sm-6 col-12">
-            <div class="heading-sub text-uppercase">
+      <div className="container">
+        <div className="padding-top"></div>
+        <div className="row">
+          <div className="col-sm-6 col-12">
+            <div className="heading-sub text-uppercase">
               <b>About Me</b>
             </div>
-            <div class="mt-4 text-content">
+            <div className="mt-4 text-content">
               I'm new graduated from Computer Science at Khonkaen University. I
               already knew some middle level programming languages like c,c++.
               Due to my interest on web-development I learned React JS ,
@@ -21,11 +21,11 @@ export default class About extends Component {
               developer.
             </div>
             <hr style={{ margin: "30px 0px", borderTop: "1px solid black" }} />
-            <div class="heading-sub text-uppercase">
+            <div className="heading-sub text-uppercase">
               <b>Technical Skills</b>
             </div>
-            <div class="row mt-4 text-content pl-3">
-              <div class="col-5 col-sm-5">
+            <div className="row mt-4 text-content pl-3">
+              <div className="col-5 col-sm-5">
                 <ul>
                   <li>C,C++</li>
                   <li>HTML/CSS</li>
@@ -34,7 +34,7 @@ export default class About extends Component {
                   <li>React JS</li>
                 </ul>
               </div>
-              <div class="col-7 col-sm-7">
+              <div className="col-7 col-sm-7">
                 <ul>
                   <li>Ionic Framework (Basic)</li>
                   <li>Java</li>
@@ -45,10 +45,10 @@ export default class About extends Component {
               </div>
             </div>
             <hr style={{ margin: "30px 0px", borderTop: "1px solid black" }} />
-            <div class="heading-sub text-uppercase">
+            <div className="heading-sub text-uppercase">
               <b>Language</b>
             </div>
-            <div class="mt-4 text-content pl-3">
+            <div className="mt-4 text-content pl-3">
               <div>
                 <ul>
                   <li>THAI : Excellent</li>
@@ -57,13 +57,13 @@ export default class About extends Component {
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-12">
-            <div class="img-about">
-              <img src="img/png/about/mockuppage.png" />
+          <div className="col-sm-6 col-12">
+            <div className="img-about">
+              <img src="img/png/about/mockuppage.png" className="image-fluid" alt="" />
             </div>
           </div>
         </div>
-        <div class="padding-bot"></div>
+        <div className="padding-bot"></div>
       </div>
     );
   }

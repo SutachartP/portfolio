@@ -1,6 +1,4 @@
 /* eslint-disable react/jsx-no-target-blank */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 
 export default class App extends Component {
@@ -8,94 +6,94 @@ export default class App extends Component {
     return (
       <div>
         <div
-          class="navbar navbar-expand-md navbar-light justify-content-center fixed-top"
+          className="navbar navbar-expand-md navbar-light justify-content-center fixed-top"
           id="navbar"
         >
-          <div class="container">
-            <a href="/" class="navbar-brand d-flex w-50 mr-auto text-uppercase">
-              {/* P. Sutachart */}
+          <div className="container">
+            <a
+              href="#home"
+              className="navbar-brand d-flex w-50 mr-auto text-uppercase"
+            >
               <img
                 src="img/icon/SP-model.png"
                 style={{ width: 50, height: 50 }}
+                alt="Logo"
               />
             </a>
-            {/* <button
-              class="navbar-toggler"
-              data-toggle="collapse"
-              data-target="#menu"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button> */}
-
-            <nav class="navbar-collapse collapse w-100" id="menu">
-              <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item">
+            <nav className="navbar-collapse collapse w-100" id="menu">
+              <ul className="navbar-nav w-100 justify-content-center">
+                <li className="nav-item">
                   <a
-                    class="nav-link text-uppercase active cool-link"
+                    className="nav-link text-uppercase active cool-link"
                     href="#home"
                   >
-                    <span class="span-link">Home</span>
+                    <span className="span-link">Home</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class=" nav-link text-uppercase" href="#about">
-                    <span class="span-link">About</span>
+                <li className="nav-item">
+                  <a className=" nav-link text-uppercase" href="#about">
+                    <span className="span-link">About</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" href="#project">
-                    <span class="span-link">Work</span>
+                <li className="nav-item">
+                  <a className="nav-link text-uppercase" href="#project">
+                    <span className="span-link">Work</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" href="#contact">
-                    <span class="span-link">Contact</span>
+                <li className="nav-item">
+                  <a className="nav-link text-uppercase" href="#contact">
+                    <span className="span-link">Contact</span>
                   </a>
                 </li>
               </ul>
-              <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                <li class="mr-1">
+              <ul className="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li className="mr-1">
                   <a
-                    class="nav-link"
+                    className="nav-link"
                     href="https://www.facebook.com/sutachart"
                     target="_blank"
                   >
-                    <img src="img/icon/facebook.png" width="20" />
+                    <img src="img/icon/nav/facebook.png" alt="" width="20" />
                   </a>
                 </li>
-                <li class="nav-item mr-1">
+                <li className="nav-item mr-1">
                   <a
-                    class="nav-link"
-                    href="https://github.com/sutachart"
+                    className="nav-link"
+                    href="https://www.github.com/sutachart"
                     target="_blank"
                   >
-                    <img src="img/icon/github.png" width="20" />
+                    <img src="img/icon/nav/github.png" alt="" width="20" />
                   </a>
                 </li>
-                <li class="nav-item mr-1">
+                <li className="nav-item mr-1">
                   <a
-                    class="nav-link"
+                    className="nav-link"
                     href="https://www.linkedin.com/in/sutachart-pookmuenwai-4aa76219b/"
                     target="_blank"
                   >
-                    <img src="img/icon/linkedin.png" width="20" />
+                    <img src="img/icon/nav/linkedin.png" alt="" width="20" />
                   </a>
                 </li>
               </ul>
             </nav>
           </div>
-          <div id="border-active" class="border-navbar"></div>
+          <div id="border-active" className="border-navbar"></div>
         </div>
-        <div class="container">
-          <div class="row align-items-center text-center justify-content-center site-blocks-cover">
-            <div class="col-md-8 col-10">
-              <h1 class="text-uppercase heading-home" id="active-img">
+        <div className="container">
+          <div className="row align-items-center text-center justify-content-center site-blocks-cover">
+            <div className="col-md-8 col-10">
+              <h1 className="text-uppercase heading-home" id="active-img">
                 Hi, i am Sutachart
-                <img class="hidden-img" src="/img/png/suit.png" width="400" />
+                <img
+                  className="hidden-img"
+                  src="/img/png/suit.png"
+                  alt=""
+                  width="400"
+                />
               </h1>
-              <span class="heading-low">Programmer & Web Developer</span>
+              <span className="heading-low">Programmer & Web Developer</span>
               <div>
-                <p class="home-sub-text">
+                <p className="home-sub-text">
                   Welcome to my portfolio, I like to learn new things and
                   improve yourself always.
                 </p>
@@ -103,32 +101,32 @@ export default class App extends Component {
                   <a
                     href="https://www.linkedin.com/in/sutachart-pookmuenwai-4aa76219b/"
                     target="_blank"
-                    class="a-link"
+                    className="a-link"
                   >
                     Linkedin
                   </a>
-                  <span class="a-link"> | </span>
+                  <span className="a-link"> | </span>
                   <a
                     href="https://github.com/sutachart"
                     target="_blank"
-                    class="a-link"
+                    className="a-link"
                   >
                     GitHub
                   </a>
-                  <span class="a-link"> | </span>
+                  <span className="a-link"> | </span>
                   <a
                     href="https://github.com/sutachart"
                     target="_blank"
-                    class="a-link"
+                    className="a-link"
                   >
                     Facebook
                   </a>
                 </p>
               </div>
             </div>
-            <div class="down-link">
+            <div className="down-link">
               <a href="#about">
-                <img src="img/icon/arrow-down.png" width="60" />
+                <img src="img/icon/arrow-down.png" alt="" width="60" />
               </a>
             </div>
           </div>
