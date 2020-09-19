@@ -43,21 +43,20 @@ header,
 #skill {
   min-height: 40vh;
   position: relative;
-  /* border-top: 0.05px solid #dee2e6; */
-  background: rgb(248, 249, 250);
+  /* background: rgb(248, 249, 250);
   background: linear-gradient(
     360deg,
     rgba(248, 249, 250, 1) 0%,
     rgba(248, 249, 250, 1) 50%,
     rgba(248, 249, 250, 1) 100%
-  );
-  /* background: rgb(233, 236, 239);
+  ); */
+  background: rgb(233, 236, 239);
   background: linear-gradient(
     360deg,
     rgba(233, 236, 239, 1) 0%,
     rgba(255, 255, 255, 1) 50%,
     rgba(233, 236, 239, 1) 100%
-  ); */
+  );
 }
 
 .nav-link,
@@ -142,22 +141,6 @@ header,
 .text-content {
   color: #495057;
   font-size: 16px;
-}
-
-.hidden-img {
-  position: fixed;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  opacity: 0;
-}
-
-h1.heading-home:hover img.hidden-img {
-  opacity: 1;
 }
 
 .border-navbar {
@@ -311,6 +294,60 @@ p.card-head-text {
   opacity: 0;
 }
 
+.bg-about-image1 {
+  background-image: url("../img/png/about/aboutus.png");
+  background-color: #cccccc;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg-about-image2 {
+  background-image: url("../img/png/about/macbook.png");
+  background-color: #cccccc;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg-about-image3 {
+  background-image: url("../img/png/about/iphoneX.png");
+  background-color: #cccccc;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.content-about {
+  padding: 0px 100px 0px;
+}
+.content-about h2 {
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.content-about p {
+  font-size: 18px;
+  color: #495057;
+}
+
+@media (max-width: 767px) {
+  .btn-openNav {
+    cursor: pointer;
+    font-weight: 900;
+    color: #212529;
+    font-size: 36px;
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    z-index: 100000;
+  }
+}
+
 @media (max-width: 991px) {
   .heading-home {
     font-size: 2.5em;
@@ -345,10 +382,6 @@ p.card-head-text {
   .padding-page div div div div div img {
     margin-top: 25px;
   }
-  /* h1.heading-home:hover img.hidden-img,
-  h1.heading-home:hover p.hidden-text {
-    opacity: 0;
-  } */
   .btn-work {
     margin-bottom: 50px;
   }
@@ -361,24 +394,14 @@ p.card-head-text {
   .nav-link {
     font-size: 12px;
   }
-
   .bg-about-image1,
   .bg-about-image2,
   .bg-about-image3,
   .about-page {
     height: 400px !important;
   }
-}
-@media (max-width: 767px) {
-  .btn-openNav {
-    cursor: pointer;
-    font-weight: 900;
-    color: #212529;
-    font-size: 36px;
-    position: fixed;
-    top: 10px;
-    right: 50px;
-    z-index: 100000;
+  .content-about {
+    padding: 20px 40px 20px !important;
   }
 }
 
@@ -397,38 +420,4 @@ p.card-head-text {
   .btn-openNav {
     opacity: 1;
   }
-}
-
-.bg-about-image1 {
-  background-image: url("../img/png/about/aboutus.png");
-  background-color: #cccccc;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.bg-about-image2 {
-  background-image: url("../img/png/about/macbookpro.png");
-  background-color: #cccccc;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.bg-about-image3 {
-  background-image: url("../img/png/about/iphoneX.png");
-  background-color: #cccccc;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.about-page {
-  height: 600px;
-  background: #ffffff;
-  padding: 50px;
 }

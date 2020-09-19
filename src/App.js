@@ -10,12 +10,9 @@ export default class App extends Component {
           id="navbar"
         >
           <div className="container">
-            <a
-              href="#home"
-              className="navbar-brand d-flex w-50 mr-auto text-uppercase"
-            >
+            <a href="#home" className="navbar-brand d-flex w-50 mr-auto">
               <img
-                src="img/icon/SP-model.png"
+                src="img/icon/nav/SP-model.png"
                 style={{ width: 50, height: 50 }}
                 alt="Logo"
               />
@@ -82,14 +79,8 @@ export default class App extends Component {
         <div className="container">
           <div className="row align-items-center text-center justify-content-center site-blocks-cover">
             <div className="col-md-8 col-10">
-              <h1 className="text-uppercase heading-home" id="active-img">
+              <h1 className="text-uppercase heading-home">
                 Hi, i am Sutachart
-                {/* <img
-                  className="hidden-img"
-                  src="/img/png/suit.png"
-                  alt=""
-                  width="400"
-                /> */}
               </h1>
               <span className="heading-low">Programmer & Web Developer</span>
               <div>
@@ -126,7 +117,7 @@ export default class App extends Component {
             </div>
             <div className="down-link">
               <a href="#about">
-                <img src="img/icon/arrow-down.png" alt="" width="60" />
+                <img src="img/icon/nav/arrow-down.png" alt="" width="60" />
               </a>
             </div>
           </div>
