@@ -67,12 +67,10 @@ export default class Contact extends Component {
         </div>
 
         <div className="footer mt-4 py-3" style={{ background: "#333333" }}>
-          <div>
-            <div className="text-center">
-              <span className="text-light">
-                © 2020, Designed & Coded by React JS.
-              </span>
-            </div>
+          <div className="text-center">
+            <span className="text-light">
+              © 2020, Designed & Coded by React JS.
+            </span>
           </div>
         </div>
       </div>

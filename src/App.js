@@ -84,12 +84,12 @@ export default class App extends Component {
             <div className="col-md-8 col-10">
               <h1 className="text-uppercase heading-home" id="active-img">
                 Hi, i am Sutachart
-                <img
+                {/* <img
                   className="hidden-img"
                   src="/img/png/suit.png"
                   alt=""
                   width="400"
-                />
+                /> */}
               </h1>
               <span className="heading-low">Programmer & Web Developer</span>
               <div>
